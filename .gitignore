@@ -20,3 +20,5 @@ trunks_amd64
 # vendor/
 
 .DS_Store
+
+.pc
