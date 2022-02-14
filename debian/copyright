@@ -1,0 +1,13 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: trunks
+Upstream-Contact: Youssouf Drif <youssouf.drif@irit.fr>
+Source: https://github.com/shynuu/trunks
+
+Files: *
+Copyright: 2021 Youssouf Drif
+License: Expat
+
+Files: debian/*
+Copyright: 2022 Louis Royer <louis.royer@irit.fr>
+License: Expat
+Comment: Debian packaging is licensed under the same terms as upstream

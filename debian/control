@@ -1,0 +1,31 @@
+Source: trunks
+Maintainer: Louis Royer <louis.royer@irit.fr>
+Uploaders: Louis Royer <louis.royer@irit.fr>
+Section: golang
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-github-go-co-op-gocron-dev,
+               golang-github-urfave-cli-v2-dev,
+               golang-gopkg-yaml.v2-dev
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/trunks
+Vcs-Git: https://github.com/louisroyer/deb-trunks
+Homepage: https://github.com/shynuu/trunks
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/shynuu/trunks
+
+Package: trunks
+Architecture: any
+Depends: iproute2,
+         iptables,
+         procps,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Built-Using: ${misc:Built-Using}
+Description: A simple DVB-S2/RCS2 satellite network simulator
+ Trunks is a lightweight DVB-S2/RCS2 satellite
+ system simulator using the native linux tools tc and iptables. The
+ following figure depicts the architecture of the software.
