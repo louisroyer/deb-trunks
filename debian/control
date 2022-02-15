@@ -4,8 +4,10 @@ Uploaders: Louis Royer <louis.royer@irit.fr>
 Section: golang
 Testsuite: autopkgtest-pkg-go
 Priority: optional
-Build-Depends: debhelper-compat (= 13),
+Build-Depends: bash-completion,
+               debhelper-compat (= 13),
                dh-golang,
+               dh-sequence-bash-completion,
                golang-any,
                golang-github-go-co-op-gocron-dev,
                golang-github-urfave-cli-v2-dev,

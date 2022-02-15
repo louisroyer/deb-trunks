@@ -1,0 +1,49 @@
+From: Louis Royer <55180044+louisroyer@users.noreply.github.com>
+Date: Tue, 15 Feb 2022 12:09:04 +0100
+Subject: Add bash-completions
+
+---
+ bash-completion/completions/trunks | 21 +++++++++++++++++++++
+ main.go                            |  1 +
+ 2 files changed, 22 insertions(+)
+ create mode 100755 bash-completion/completions/trunks
+
+diff --git a/bash-completion/completions/trunks b/bash-completion/completions/trunks
+new file mode 100755
+index 0000000..f0f6241
+--- /dev/null
++++ b/bash-completion/completions/trunks
+@@ -0,0 +1,21 @@
++#! /bin/bash
++
++: ${PROG:=$(basename ${BASH_SOURCE})}
++
++_cli_bash_autocomplete() {
++  if [[ "${COMP_WORDS[0]}" != "source" ]]; then
++    local cur opts base
++    COMPREPLY=()
++    cur="${COMP_WORDS[COMP_CWORD]}"
++    if [[ "$cur" == "-"* ]]; then
++      opts=$( ${COMP_WORDS[@]:0:$COMP_CWORD} ${cur} --generate-bash-completion )
++    else
++      opts=$( ${COMP_WORDS[@]:0:$COMP_CWORD} --generate-bash-completion )
++    fi
++    COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
++    return 0
++  fi
++}
++
++complete -o bashdefault -o default -o nospace -F _cli_bash_autocomplete $PROG
++unset PROG
+diff --git a/main.go b/main.go
+index 85e90ee..6087f43 100644
+--- a/main.go
++++ b/main.go
+@@ -20,6 +20,7 @@ func main() {
+ 	app := &cli.App{
+ 		Name:  "trunks",
+ 		Usage: "a simple DVB-S2/DVB-RCS2 simulator",
++		EnableBashCompletion: true,
+ 		Authors: []*cli.Author{
+ 			{Name: "Youssouf Drif"},
+ 		},
