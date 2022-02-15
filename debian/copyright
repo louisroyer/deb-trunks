@@ -3,6 +3,7 @@ Upstream-Name: trunks
 Upstream-Contact: Youssouf Drif <youssouf.drif@irit.fr>
 Source: https://github.com/shynuu/trunks
 Files-Excluded: container script config
+Comment: Deployment files for Docker and local test
 
 Files: *
 Copyright: © 2021 Youssouf Drif
