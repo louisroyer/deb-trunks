@@ -13,7 +13,7 @@ Build-Depends: bash-completion,
                golang-github-urfave-cli-v2-dev,
                golang-gopkg-yaml.v2-dev
 Standards-Version: 4.5.0
-Vcs-Git: https://github.com/louisroyer/deb-trunks
+Vcs-Git: https://github.com/louisroyer-deb/trunks
 Homepage: https://github.com/shynuu/trunks
 Rules-Requires-Root: no
 XS-Go-Import-Path: github.com/shynuu/trunks
