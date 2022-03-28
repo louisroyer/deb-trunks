@@ -1,5 +1,5 @@
-trunks (2.0.1+dfsg-1) UNRELEASED; urgency=medium
+trunks (2.0.1+dfsg-1) bullseye; urgency=medium
 
   * UNOFFICIAL Packaging - Initial release
 
- -- Louis Royer <louis@CometTail>  Tue, 15 Feb 2022 11:45:00 +0100
+ -- Louis Royer <louis.royer@irit.fr>  Tue, 15 Feb 2022 11:45:00 +0100
