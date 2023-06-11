@@ -11,7 +11,7 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 .vagrant/
-*log !debian/changelog
+*log
 Vagrantfile
 trunk
 trunks_amd64
