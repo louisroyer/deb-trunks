@@ -1,3 +1,9 @@
+trunks (2.0.2+dfsg-1) bookworm; urgency=medium
+
+  * New upstream version 2.0.2+dfsg
+
+ -- Louis Royer <louis.royer@irit.fr>  Mon, 23 Oct 2023 11:03:13 +0200
+
 trunks (2.0.1+dfsg-2) bookworm; urgency=medium
 
   * Update to bookworm
