@@ -25,7 +25,7 @@ Depends: iproute2,
          procps,
          ${misc:Depends},
          ${shlibs:Depends}
-Built-Using: ${misc:Built-Using}
+Static-Built-Using: ${misc:Static-Built-Using}
 Description: A simple DVB-S2/RCS2 satellite network simulator
  Trunks is a lightweight DVB-S2/RCS2 satellite
  system simulator using the native linux tools tc and iptables. The

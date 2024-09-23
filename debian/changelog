@@ -1,3 +1,9 @@
+trunks (2.0.2+dfsg-2) bookworm; urgency=medium
+
+  * Update Built-Using to Static-Built-Using
+
+ -- Louis Royer <louis.royer@irit.fr>  Mon, 23 Sep 2024 16:25:47 +0200
+
 trunks (2.0.2+dfsg-1) bookworm; urgency=medium
 
   * New upstream version 2.0.2+dfsg
